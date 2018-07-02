@@ -1,0 +1,9 @@
+<h1>HEY FOLKS :)</h1>
+
+<%@user.each do |a|%>
+<%=a.name%>
+<br>
+<%=link_to 'user_to_edit', '/user/2/edit'%>
+<br>
+<%=link_to 'delete', a, data: {confirm: "are you sure?"}, method: :delete%>
+<%end%>
